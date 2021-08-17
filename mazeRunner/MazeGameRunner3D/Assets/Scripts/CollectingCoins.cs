@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CollectingCoins : MonoBehaviour
 {
+    public int points = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,16 +17,10 @@ public class CollectingCoins : MonoBehaviour
         
     }
 
-     private void onTriggerEnter(Collider other)
-     {
-       if (other.name=="Player");
+    private void OnGUI()
+    {
       
-       {
-         Destroy(gameObject);
+      GUI.Label(new Rect(10,10,100,20), "Score : " + points);
 
-       }
-
-     }
-
-
+    }
 }
