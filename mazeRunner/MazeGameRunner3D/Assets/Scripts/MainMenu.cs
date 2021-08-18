@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
-     public string URL = "https://github.com/harrypaul961/Alpha";
+     
 
      public void PlayGame()
      {
@@ -16,9 +16,6 @@ public class MainMenu : MonoBehaviour
          Application.Quit();
      }
 
-     public void loadurl()
-     {
-         Application.OpenURL(URL);
-     }
+     
 }
 
